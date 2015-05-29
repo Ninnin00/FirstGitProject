@@ -1,0 +1,50 @@
+﻿@model FirstMVCApplication.Models.PeopleModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PeopleModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pbrith)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pbrith)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Page)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Page)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Psex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Psex)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Pid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
